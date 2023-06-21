@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // Get values from the query string
 $servername = $_GET['servername'];
 $username = $_GET['username'];
