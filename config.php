@@ -2,11 +2,14 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+$vars = print_r (explode(";",$_GET["config"]));
+
 // Get values from the query string
-$servername = $_GET['servername'];
-$username = $_GET['username'];
-$password = $_GET['password'];
-$dbname = $_GET['dbname'];
+$servername = $vars[0];
+$username = $vars[1];
+$password = $vars[2];
+$dbname = $vars[3];
 
 // Create an associative array with the config
 $config = [

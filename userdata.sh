@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo yum update -y
 sudo yum install git -y
 sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
@@ -14,4 +15,4 @@ cd ~/
 git clone https://github.com/xavtidus/super-unsafe-php-rds-project.git
 cd super-unsafe-php-rds-project
 sudo cp * /var/www/html
-curl http://localhost/config.php?servername=localhost&username=testuser&password=testpass&dbname=testdb
+curl http://localhost/config.php?servername=database-1.cluster-ch0mpekudt59.ap-southeast-2.rds.amazonaws.com&username=admin&password=6b*GCDBkXcdL3xP&dbname=mydb
