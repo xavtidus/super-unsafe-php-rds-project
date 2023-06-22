@@ -8,7 +8,7 @@ echo "starting...";
 
 $config_file_path = "/tmp/config.json";
 
-if(file_exists()){
+if(file_exists($config_file_path)){
     $json = file_get_contents($config_file_path);
 
     echo $json;
