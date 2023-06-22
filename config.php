@@ -24,5 +24,7 @@ file_put_contents('/tmp/config.json', $json);
 
 echo "Configuration saved.";
 
-echo readfile('/tmp/config.json')
+$filedata =  readfile('/tmp/config.json')
+
+echo $filedata
 ?>
