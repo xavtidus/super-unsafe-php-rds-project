@@ -15,6 +15,8 @@ if (file_exists($tmp_cfg_file_path)) {
     $json = file_get_contents('config.json');
 }
 
+echo $message
+
 // Decode JSON file into an associative array
 $config = json_decode($json, true);
 
