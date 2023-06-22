@@ -5,4 +5,8 @@ error_reporting(E_ALL);
 // Read JSON file
 echo "starting..."
 
+$json = file_get_contents('/tmp/config.json');
+
+// Decode JSON file into an associative array
+$config = json_decode($json, true);
 ?>
