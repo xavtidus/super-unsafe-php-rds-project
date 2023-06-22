@@ -7,6 +7,8 @@ echo "starting..."
 
 $json = file_get_contents('/tmp/config.json');
 
+echo $json
+
 // Decode JSON file into an associative array
 $config = json_decode($json, true);
 
