@@ -5,6 +5,16 @@ error_reporting(E_ALL);
 // Read JSON file
 $json = file_get_contents('config.json');
 
+$tmp_cfg_file_path = "/tmp/config.json"
+
+if (file_exists($tmp_cfg_file_path)) {
+    $message = "The config in the temp dir exists, loading";
+    $json = file_get_contents($tmp_cfg_file_path);
+} else {
+    $message = "The config in the temp dir does not exist, loading defaults";
+    $json = file_get_contents('config.json');
+}
+
 // Decode JSON file into an associative array
 $config = json_decode($json, true);
 
