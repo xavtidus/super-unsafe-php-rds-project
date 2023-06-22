@@ -30,7 +30,7 @@ if(file_exists($config_file_path)){
         die("Connection failed: " . $conn->connect_error);
     }
 
-    echo "\r\n\r\nConnected successfully";
+    echo "<br /><br /><br />Connected successfully";
 
     // Always remember to close the connection once you're done
     $conn->close();
