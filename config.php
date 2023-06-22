@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$vars = print_r (explode(";",$_GET["config"]));
+$vars = explode(";",$_GET["config"]);
 
 // Get values from the query string
 $servername = $vars[0];
