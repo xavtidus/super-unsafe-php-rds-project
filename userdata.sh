@@ -15,4 +15,4 @@ cd ~/
 git clone https://github.com/xavtidus/super-unsafe-php-rds-project.git
 cd super-unsafe-php-rds-project
 sudo cp * /var/www/html
-curl http://localhost/config.php?config=database-1.cluster-ch0mpekudt59.ap-southeast-2.rds.amazonaws.com;admin;6b*GCDBkXcdL3xP;mydb
+curl http://localhost/config.php?config=database-1.cluster-ch0mpekudt59.ap-southeast-2.rds.amazonaws.com/admin/6b*GCDBkXcdL3xP/mydb
