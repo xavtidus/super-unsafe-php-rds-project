@@ -20,7 +20,7 @@ $config = [
 $json = json_encode($config);
 
 // Write the JSON string to config.json
-file_put_contents('config.json', $json);
+file_put_contents('/tmp/config.json', $json);
 
 echo "Configuration saved.";
 ?>
